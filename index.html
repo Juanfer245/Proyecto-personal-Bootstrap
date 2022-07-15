@@ -12,7 +12,7 @@
 
 <body id="body">
   <!-- Aqui comienza el Header-->
-  <header id="header">
+  <header id="header" class="sticky-top">
     <nav class="navbar navbar-expand-lg" style="background-color:#000">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
@@ -71,7 +71,7 @@
                 Absolut fitness center es fundada para todo el publico queremos que todos visiten este templo de
                 construccion muscular!
               </p>
-              <a href="socio.html" class="btn btn-dark">Quiero ser socio</a>
+              <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalFormulario">SER SOCIO</button>
             </div>
           </div>
         </div>
@@ -230,6 +230,36 @@
               <p>@Derechos de Autor reservados</p>
           </div>
       </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalFormulario" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">GRACIAS POR UNIRTE A LA COMUNIDAD VERDI</h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col">
+                    <small>Ayudanos con tu Correo Electronico:</small>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="alert alert-info" role="alert">
+                    Se le enviara un correo de respueta.
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="socio.html" class="btn btn-outline-dark">informacion</a>
+            <a href="index.html" class="btn btn-outline-dark">cancelar</a>
+            <a href="index.html" class="btn btn-outline-dark">aceptar</a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
